@@ -3,7 +3,7 @@ Docker file(s) for tectia-client from ssh.com
 
 With docker going almost native on Mac, we can now use our favourite ssh tectia client almost natively.
 
-1.) clone the repository, download ssh tectia evaluation from http://info.ssh.com/ssh-tectia-client-trial-download or place your licensed version inside the cloned directory.
+1.) clone the repository, download ssh tectia evaluation from http://info.ssh.com/ssh-tectia-client-trial-download or place your licensed version inside the cloned directory. Currently the file is expecting a static named file: "tectia-client-6.4.13.36-linux-x86_64-comm.tar"
 
 2.) build the image, e.g.
 
