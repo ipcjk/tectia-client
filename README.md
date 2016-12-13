@@ -1,12 +1,7 @@
 # tectia-client
 Docker file(s) for tectia-client from ssh.com
 
-If you want to use SSH tectia on MacOS, you may be stucked in the old evolution version. But with docker going almost native on Mac, we can now use our favourite ssh client almost natively.
-
-todo) 
-bring up ssh-broker in a second container and link with the tectia-client
-
-install)
+With docker going almost native on Mac, we can now use our favourite ssh tectia client almost natively.
 
 1.) clone the repository, download ssh tectia evaluation from http://info.ssh.com/ssh-tectia-client-trial-download or place your licensed version inside the cloned directory.
 
