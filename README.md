@@ -13,9 +13,12 @@ docker build -t joerg/tectia-client .
 
 3.) link this commands with a fancy bash alias inside .bashrc or alternative, e.g.
 
-alias sshg3="docker run -v $HOME/.ssh2:/home/sshclient/.ssh2 -i -t joerg/tectia-client"
+alias ssh-keygen-g3="docker --rm run -v $HOME/.ssh2:/home/sshclient/.ssh2 -i -t joerg/tectia-client /opt/tectia/bin/ssh-keygen-g3"
 
-alias ssh-keygen-g3="docker run -v $HOME/.ssh2:/home/sshclient/.ssh2 -i -t --entrypoint=/opt/tectia/bin/ssh-keygen-g3 joerg/tectia-client"
+alias sshg3="docker run --rm -v $HOME/.ssh2:/home/sshclient/.ssh2 -i -t joerg/tectia-client /opt/tectia/bin/sshg3"
+
+alias ssh-broker-g3="docker run --rm -v $HOME/.ssh3:/home/sshclient/.ssh2 -d joerg/tectia-client /opt/tectia/bin/ssh-broker-g3 --broker-address==0.0.0.0:22222 --console"
+
 
 4.) have fun using ssh-keygen and sshg3 ;-)
 
